@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:food_web/Components/default_button.dart';
 import 'package:food_web/Screens/Home/Components/app_bar.dart';
 import 'package:food_web/Screens/Home/Components/body.dart';
-import 'package:flutter/services.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeLeft,
-
-    ]);
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
